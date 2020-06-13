@@ -1,12 +1,12 @@
 # Multimedia Similarity Measures
 
-Given a dataset consisting of data about locations and the associated users and images, this implementation tries to find the most similar entities using various given descriptors.
+Given a dataset about locations and the associated users and images, this implementation tries to find the most similar entities using various given descriptors.
 The program directly processes csv/txt files. No database setup is required.
 
 ## GENERAL USAGE NOTES
 
 - The project currently only supports a specifc file structure and dataset in a particular format.
-- The dataset used for all the testing can be found here http://skuld.cs.umass.edu/traces/mmsys/2015/paper-5/ 
+- The dataset used for all the testing can be found [here](http://skuld.cs.umass.edu/traces/mmsys/2015/paper-5/ ).
 - The files used from the above dataset are all present in the devset folder:
    - devset_topics.xml
    - descvis.zip
@@ -16,30 +16,31 @@ The program directly processes csv/txt files. No database setup is required.
 ## GETTING STARTED: INSTALLATION ON WINDOWS10
 
 ### Installing Python 3.7.0 for Windows10
-1. Download Python3.7.0 by clicking on [this link](https://www.python.org/ftp/python/3.7.0/python-3.7.0-webinstall.exe)
-2. Open the executable
-3. Follow the instructions on the screen to install
+1. Download Python3.7.0 by clicking on [this link](https://www.python.org/ftp/python/3.7.0/python-3.7.0-webinstall.exe).
+2. Open the executable.
+3. Follow the instructions on the screen to install.
 
 ### Libaries required to  be installed (run the corresponding commands on cmd after installing Python 3.7.0)
--pandas : pip install pandas
--csv: Part of python's standard library
--numpy: pip install numpy
--sys: Part of python's standard library
--datetime: pip install datetime
--operator: Part of python's standard library
--bs4: pip install bs4
--statistics: pip install statistics
--lxml: pip install lxml
--time: Part of python's standard library
--re: Part of python's standard library
--sklearn: pip install sklearn
--itertools: Part of python's standard library
+
+- pandas : pip install pandas  
+- csv: Part of python's standard library  
+- numpy: pip install numpy  
+- sys: Part of python's standard library  
+- datetime: pip install datetime  
+- operator: Part of python's standard library  
+- bs4: pip install bs4  
+- statistics: pip install statistics  
+- lxml: pip install lxml  
+- time: Part of python's standard library  
+- re: Part of python's standard library  
+- sklearn: pip install sklearn  
+- itertools: Part of python's standard library  
 
 
 ## HOW TO USE
 
 ### Python programs:
-Below are the 3 Python programs needed to accomplish the tasks of finding similarity
+Below are the 3 Python programs needed to accomplish the tasks of finding similarity:
 1. cse515_textual_similarity.py - This can be used to match a given input entity (user/image/location) with other corresponding entities and return top k similar entities, along with the features that have the maximum contribution in similarity.
 Expected input arguments: <entity id> <model - TF/DF/IDF> <k>
 
@@ -58,20 +59,21 @@ Files required, along with the above listed Python programs:
 
 Get all the code files and data files in the directory where you will run the code and set the parameters in params.py accordingly. 
 
-### Initializing params.py (The default file is given below)
--file_location: Set this to the base directory path where all your datafiles would be present. The user, images and location textual descriptors data can further be in differnet directories.
--user_file_name: Set this to the file name for the Textual Descriptors for users. Also include the file path after the 'file_location' in user_file_name.
--image_file_name: Set this to the file name for the Textual Descriptors for images. Also include the file path after the 'file_location' in image_file_name.
--location_file_name: Set this to the file name for the Textual Descriptors for location. Also include the file path after the 'file_location' in location_file_name. The file for location descriptors is expected to contain just the location description as the identifier, and NOT location description and location name both.
--parsed_location_file_name: The location process internally uses this file to process the location textual descriptors. It can be any logical filename name.
--xml_file_loc: Path of the topic xml file containing location meta-data in the current dataset.
--xml_file_name: Name of the topic xml file containing location meta-data
--visual_desc_location: Path where all the visual descriptors and present
+### Initializing params.py (The default file is given below)  
+
+- file_location: Set this to the base directory path where all your datafiles would be present. The user, images and location textual descriptors data can further be in differnet directories.  
+- user_file_name: Set this to the file name for the Textual Descriptors for users. Also include the file path after the 'file_location' in user_file_name.  
+- image_file_name: Set this to the file name for the Textual Descriptors for images. Also include the file path after the 'file_location' in image_file_name.  
+- location_file_name: Set this to the file name for the Textual Descriptors for location. Also include the file path after the 'file_location' in location_file_name. The file for location descriptors is expected to contain just the location description as the identifier, and NOT location description and location name both.  
+- parsed_location_file_name: The location process internally uses this file to process the location textual descriptors. It can be any logical filename name.  
+- xml_file_loc: Path of the topic xml file containing location meta-data in the current dataset.  
+- xml_file_name: Name of the topic xml file containing location meta-data.  
+- visual_desc_location: Path where all the visual descriptors and present.  
 
 ## TESTS:
 
 ### Given a userid (39052445@N00), model (TF) and k(2):
-Open CMD 
+Open CMD   
 Run Program: python <directory>/user_input_opt_v1.py 39052445@N00 TF 2
 
 Output: Similarity |     ID      | Similar Terms
@@ -80,12 +82,15 @@ Output: Similarity |     ID      | Similar Terms
             
 ## LIBRARY REFERENCES:         
 
-pandas: http://pandas.pydata.org/pandas-docs/stable/
-csv: https://docs.python.org/3.7/library/csv.html
-numpy: https://docs.scipy.org/doc/
-sys: https://docs.python.org/3.7/library/sys.html
-datetime: https://docs.python.org/3.7/library/datetime.html
-operator: https://docs.python.org/3/library/operator.html
-bs4: https://beautiful-soup-4.readthedocs.io/en/latest/
-statistics: https://docs.python.org/3/library/statistics.html
-lxml: https://lxml.de/
+- pandas: http://pandas.pydata.org/pandas-docs/stable/
+- csv: https://docs.python.org/3.7/library/csv.html
+- numpy: https://docs.scipy.org/doc/
+- sys: https://docs.python.org/3.7/library/sys.html
+- datetime: https://docs.python.org/3.7/library/datetime.html
+- operator: https://docs.python.org/3/library/operator.html
+- bs4: https://beautiful-soup-4.readthedocs.io/en/latest/
+- statistics: https://docs.python.org/3/library/statistics.html
+- lxml: https://lxml.de/
+
+## AUTHORS:
+[Laveena Sachdeva](https://github.com/laveena-sachdeva)
