@@ -41,18 +41,18 @@ The program directly processes csv/txt files. No database setup is required.
 
 ### Python programs:
 Below are the 3 Python programs needed to accomplish the tasks of finding similarity:
-1. cse515_textual_similarity.py - This can be used to match a given input entity (user/image/location) with other corresponding entities and return top k similar entities, along with the features that have the maximum contribution in similarity.
+1. textual_similarity.py - This can be used to match a given input entity (user/image/location) with other corresponding entities and return top k similar entities, along with the features that have the maximum contribution in similarity.
 Expected input arguments: <entity id> <model - TF/DF/IDF> <k>
 
-2. cse515_visual_similarity_per_model.py - This can be used to match a given input location with other locations based on the user desired visual descriptors and return top k similar locations, along with the image-pairs that have the maximum contribution in similarity.
+2. visual_similarity_per_model.py - This can be used to match a given input location with other locations based on the user desired visual descriptors and return top k similar locations, along with the image-pairs that have the maximum contribution in similarity.
 Expected input arguments: <location id> <model - CM, CM3x3, CN, CN3x3,CSD,GLRLM, GLRLM3x3,HOG,LBP, LBP3x3> <k>
 
-3. cse515_visual_similarity_wrapper.py - This internally uses cse515_visual_similarity_all_models.py for various functionalities. This can be used to match a given input location with other locations based on differemt weights of all the visual descriptors (CM, CM3x3, CN, CN3x3,CSD,GLRLM, GLRLM3x3,HOG,LBP, LBP3x3) and return top k similar locations, along with the individual contribution of the models.
+3. visual_similarity_wrapper.py - This internally uses cse515_visual_similarity_all_models.py for various functionalities. This can be used to match a given input location with other locations based on differemt weights of all the visual descriptors (CM, CM3x3, CN, CN3x3,CSD,GLRLM, GLRLM3x3,HOG,LBP, LBP3x3) and return top k similar locations, along with the individual contribution of the models.
 Expected input arguments: <location id> <k>
 
 
 Files required, along with the above listed Python programs:
-1. cse515_visual_similarity_all_models.py
+1. visual_similarity_all_models.py
 2. params.py
 3. locationpreprocess.py
 
