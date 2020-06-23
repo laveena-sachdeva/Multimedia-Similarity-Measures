@@ -76,9 +76,10 @@ Get all the code files and data files in the directory where you will run the co
 Open CMD   
 Run Program: python <directory>/user_input_opt_v1.py 39052445@N00 TF 2
 
-Output: Similarity |     ID      | Similar Terms
-            0.866  | 9688281@N07 | "bok","tower","garden"
-            0.789  | 93858545@N00| "garden","tower","bok"
+Output  
+Similarity |     ID      | Similar Terms  
+0.866  | 9688281@N07 | "bok","tower","garden"  
+0.789  | 93858545@N00| "garden","tower","bok"  
             
 ## LIBRARY REFERENCES:         
 
