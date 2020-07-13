@@ -47,7 +47,7 @@ Expected input arguments: <entity id> <model - TF/DF/IDF> <k>
 2. visual_similarity_per_model.py - This can be used to match a given input location with other locations based on the user desired visual descriptors and return top k similar locations, along with the image-pairs that have the maximum contribution in similarity.
 Expected input arguments: <location id> <model - CM, CM3x3, CN, CN3x3,CSD,GLRLM, GLRLM3x3,HOG,LBP, LBP3x3> <k>
 
-3. visual_similarity_wrapper.py - This internally uses cse515_visual_similarity_all_models.py for various functionalities. This can be used to match a given input location with other locations based on differemt weights of all the visual descriptors (CM, CM3x3, CN, CN3x3,CSD,GLRLM, GLRLM3x3,HOG,LBP, LBP3x3) and return top k similar locations, along with the individual contribution of the models.
+3. visual_similarity_wrapper.py - This internally uses visual_similarity_all_models.py for various functionalities. This can be used to match a given input location with other locations based on differemt weights of all the visual descriptors (CM, CM3x3, CN, CN3x3,CSD,GLRLM, GLRLM3x3,HOG,LBP, LBP3x3) and return top k similar locations, along with the individual contribution of the models.
 Expected input arguments: <location id> <k>
 
 
