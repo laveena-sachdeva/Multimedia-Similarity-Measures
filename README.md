@@ -99,7 +99,7 @@ Output: The output is written to a CSV file in your working directory. The file 
 ### Location Similarity using Visual Descriptors: Implement a program which, given a location ID and value “k”, returns the most similar k locations based on the corresponding visual descriptors of the images as specified in the “img” folder. For each match, also list the overall matching score and the individual contributions of the 10 visual models.  
 
 Interface Specification:  visual_similarity_wrapper.py <location_id> <k>  
-Example: visual_similarity_wrapper 4 5  
+Example: visual_similarity_wrapper.py 4 5  
 Output: The output is written to a CSV file in your working directory. The file is named as visual_similarity_all_models.csv.
 
 
